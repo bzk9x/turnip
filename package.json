@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "tsc && npm run copy-files && electron .",
+    "build": "tsc && npm run copy-files",
+    "copy-files": "copyfiles -u 1 \"src/windows/**/*.html\" \"src/styles/**/*.css\" \"src/assets/**/*.svg\" dist/"
+  },
+  "main": "dist/main.js",
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^22.14.0",
+    "copyfiles": "^2.4.1",
+    "electron": "^35.1.4"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.1",
+    "firebase": "^11.6.0",
+    "firebase-admin": "^13.2.0"
+  }
+}
