@@ -4,7 +4,8 @@ package-lock.json
 
 # Build outputs
 dist/
-build/
+builds/
+builds-windows/
 out/
 *.tsbuildinfo
 
