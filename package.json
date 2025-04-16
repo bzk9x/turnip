@@ -1,19 +1,42 @@
 {
   "scripts": {
-    "start": "tsc && npm run copy-files && electron .",
-    "build": "tsc && npm run copy-files",
-    "copy-files": "copyfiles -u 1 \"src/windows/**/*.html\" \"src/styles/**/*.css\" \"src/assets/**/*.svg\" dist/"
+    "start": "tsc && npm run copy-files && npm run obfuscate && electron .",
+    "build": "tsc && npm run copy-files && npm run obfuscate",
+    "copy-files": "copyfiles -u 1 \"src/windows/**/*.html\" \"src/styles/**/*.css\" \"src/assets/**/*.svg\" dist/",
+    "obfuscate": "npx ts-node scripts/obfuscate.ts"
   },
   "main": "dist/main.js",
   "devDependencies": {
     "@types/electron": "^1.4.38",
     "@types/node": "^22.14.0",
     "copyfiles": "^2.4.1",
-    "electron": "^35.1.4"
+    "electron": "^35.1.4",
+    "javascript-obfuscator": "^4.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
+    "electron-deeplink": "^1.0.10",
+    "electron-is-dev": "^3.0.1",
     "electron-store": "^10.0.1",
     "firebase": "^11.6.0",
-    "firebase-admin": "^13.2.0"
+    "firebase-admin": "^13.2.0",
+    "node-fetch": "^2.7.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "protocols": [
+          {
+            "protocol": "macademia",
+            "name": "Macademia Protocol",
+            "schemes": [
+              "macademia"
+            ]
+          }
+        ]
+      }
+    }
   }
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "981523362005",
+    "firebase_url": "https://bittscafecorp-default-rtdb.firebaseio.com",
+    "project_id": "bittscafecorp",
+    "storage_bucket": "bittscafecorp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981523362005:android:139a6b912e7f09bbc6b25c",
+        "android_client_info": {
+          "package_name": "com.bittscafe.purpose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981523362005-kcm43c36hbndqrgjd36iosf9apm7ut3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bittscafe.purpose",
+            "certificate_hash": "72810d9f099ed3e5b9fa881fadcfa0f0f0013f51"
+          }
+        },
+        {
+          "client_id": "981523362005-1s960ak3emrb6b1kdo7hfh1n8060df8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5rYPYF3VrZ_ZtmlAzPoIVsHXnGs97WmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981523362005-1s960ak3emrb6b1kdo7hfh1n8060df8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,33 +1,55 @@
+# Dependencies
 node_modules/
 package-lock.json
 
+# Build outputs
 dist/
 build/
 out/
+*.tsbuildinfo
 
+# Environment variables and secrets
 .env
 .env.local
 .env.*.local
-
-src/utils/firebase.ts
-
 .electron-builder.env
+client_secret_*.json
+secure-config.json
+secure-data.enc
+google-services.json
 
-*.tsbuildinfo
+# Firebase related
+src/utils/firebase.ts
+firebase-debug.log*
+.firebase/
 
+# Templates directory
+templates/
+
+# System and IDE files
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
+.idea/
+*.sublime-*
 .DS_Store
 Thumbs.db
+desktop.ini
+*.stackdump
 
+# Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Application data
 appData.json
+**/userData/
+
+# Installer files
+*.exe
+*.msi
